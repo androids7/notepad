@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+	
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	
+	android:layout_height="wrap_content"
+	android:layout_width="wrap_content">
+	
+	
+	<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+
+	
+		<LinearLayout
+			android:orientation="vertical"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:background="@drawable/edit_bg4">
+
+			<EditText
+				android:id="@+id/editTitle"
+				android:hint="请输入标题"
+				android:layout_width="188dp"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="75dp"
+				android:singleLine="true"
+				android:paddingTop="20dp"
+				android:background="@null"/>
+
+			<EditText
+				android:id="@+id/editContent"
+				android:hint="输入内容"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:height="350dp"
+				android:paddingTop="5dp"
+				android:paddingLeft="45dp"
+				android:paddingRight="10dp"
+				android:paddingBottom="23dp"
+				android:lineSpacingExtra="4dp"
+				android:singleLine="false"
+				android:gravity="top"
+				android:background="@null"/>
+
+			<LinearLayout
+				android:layout_height="wrap_content"
+				android:layout_width="match_parent"
+				android:orientation="horizontal">
+
+				<ImageView
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					android:text="Text"
+					android:id="@+id/editnotepadImageView"
+					android:src="@drawable/blue_sky"/>
+
+				<Button
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					android:text="播放录音"
+					android:id="@+id/editnotepadButtonplay"
+				/>
+
+			</LinearLayout>
+
+		</LinearLayout>
+
+	
+
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_weight="1">
+
+		<Button
+			android:id="@+id/addRecordButton"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:text="增加"/>
+
+		<Button
+			android:id="@+id/editComplete"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:text="完成"/>
+
+	</LinearLayout>
+
+</LinearLayout>
+
+</ScrollView>
+
